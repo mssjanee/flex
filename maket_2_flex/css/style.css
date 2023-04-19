@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Noto+Sans:wght@400;700&family=Old+Standard+TT&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: Archivo;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1159px;
+  margin: 0px auto;
+}
+
+.con {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Noto Sans;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45.84px;
+  letter-spacing: 0.03em;
+}
+
+.btn {
+  font-family: Noto Sans;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 25.98px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: #AEA784;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.main {
+  padding: 50px 0px 0px 0px;
+}
+.main__row {
+  display: flex;
+  justify-content: space-between;
+}
+.main__body {
+  flex: 1 1 auto;
+  font-weight: 500;
+  padding: 0px 100px 0px 0px;
+  align-self: center;
+}
+.main__titile {
+  font-size: 35px;
+  line-height: 48.23px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0px 0px 43px 0px;
+}
+.main__text {
+  font-size: 16px;
+  line-height: 29.97px;
+  letter-spacing: 0.03em;
+  margin: 0px 0px 43px 0px;
+  padding: 0px 400px 0px 0px;
+}
+.main__button {
+  padding: 15px 64px;
+}
+.main__image {
+  flex: 0 0 445px;
+}
+.main__image img {
+  max-width: 100%;
+}
+
+.new {
+  padding: 100px 0px;
+  font-family: Noto Sans;
+}
+.new__title {
+  margin: 0px 0px 68px 0px;
+}
+.new__row {
+  display: flex;
+  margin: 0px -15px;
+}
+.new__column {
+  flex: 0 1 33.333%;
+  padding: 0px 15px;
+}
+.new__image {
+  margin: 0px 0px 19px 0px;
+}
+.new__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 25.98px;
+  letter-spacing: 0.03em;
+  margin: 0px 0px 7px 0px;
+}
+.new__price {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19.86px;
+  letter-spacing: 0.03em;
+  color: #AEA784;
+}
+
+.subscribe {
+  padding: 0px 0px 100px 0px;
+}
+.subscribe__con {
+  background: #ECE9E4;
+  border-radius: 14px;
+}
+.subscribe__row {
+  display: flex;
+}
+.subscribe__body {
+  flex: 1 1 auto;
+  align-self: center;
+  padding: 0px 50px 0px 92px;
+}
+.subscribe__title {
+  margin: 0px 0px 62px 0px;
+}
+.subscribe__email {
+  font-family: Noto Sans;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 25.98px;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.46);
+  display: inline;
+  padding: 0px 328px 8px 0px;
+  margin: 0px 0px 8px 0px;
+  border-bottom: 1px solid #686868;
+}
+.subscribe__button {
+  font-size: 15px;
+  padding: 8px 26px;
+}
+.subscribe__image {
+  flex: 0 0 349px;
+}
+.subscribe__image img {
+  max-width: 100%;
+}
+
+.info {
+  padding: 0px 0px 100px 0px;
+}
+.info__row {
+  display: flex;
+  justify-content: space-between;
+}
+.info__title {
+  line-height: 40.86px;
+  padding: 0px 65px 0px 0px;
+}
+.info__body {
+  display: flex;
+  margin: 0px -67.5px;
+}
+.info__item {
+  font-family: Archivo;
+  font-weight: 500;
+  padding: 0px 67.5px;
+}
+.info__number {
+  font-size: 30px;
+  letter-spacing: 0.03em;
+  color: #AEA784;
+  line-height: 152.8%;
+}
+.info__text {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 24.45px;
+}
+
+.footer {
+  background: #474537;
+}
+.footer__text {
+  font-family: Old Standard TT;
+  font-size: 25px;
+  line-height: 30.9px;
+  letter-spacing: 0.455em;
+  color: #fff;
+  padding: 165px 0px;
+  text-align: center;
+}
